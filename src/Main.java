@@ -18,12 +18,12 @@ public class Main {
 
         int[] forBubble = Arrays.copyOf(small, small.length);
         sorter.basicSort(forBubble);
-        System.out.print("Bubble Sort: ");
+        System.out.print("\nBubble Sort: ");
         sorter.printArray(forBubble);
 
         int[] forMerge = Arrays.copyOf(small, small.length);
         sorter.advancedSort(forMerge);
-        System.out.print("Merge Sort:  ");
+        System.out.print("\nMerge Sort:  ");
         sorter.printArray(forMerge);
 
         int target = forMerge[5];

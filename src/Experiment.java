@@ -55,7 +55,7 @@ public class Experiment {
 
             System.out.println("Size: " + size + " | Sorted array");
             System.out.println("Bubble Sort: " + bubbleSortedTime + " ns");
-            System.out.println("Merge Sort:  " + mergeSortedTime + " ns");
+            System.out.println("Merge Sort: " + mergeSortedTime + " ns");
             System.out.println();
         }
 
@@ -70,7 +70,7 @@ public class Experiment {
             int index = searcher.search(arr, target);
 
             System.out.println("Size: " + size + " | Target: " + target);
-            System.out.println("  Binary Search: " + searchTime + " ns | Found at index: " + index);
+            System.out.println("Binary Search: " + searchTime + " ns | Found at index: " + index);
             System.out.println();
         }
     }
