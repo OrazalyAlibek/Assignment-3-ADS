@@ -44,8 +44,8 @@ public class Experiment {
             long mergeTime  = measureSortTime(arr2, "advanced");
 
             System.out.println("Size: " + size + " | Random array");
-            System.out.println("  Bubble Sort: " + bubbleTime + " ns");
-            System.out.println("  Merge Sort:  " + mergeTime + " ns");
+            System.out.println("Bubble Sort: " + bubbleTime + " ns");
+            System.out.println("Merge Sort:  " + mergeTime + " ns");
 
             int[] sorted1 = Arrays.copyOf(arr1, arr1.length);
             int[] sorted2 = Arrays.copyOf(arr1, arr1.length);
