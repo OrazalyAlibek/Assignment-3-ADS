@@ -70,6 +70,8 @@ Works on a **sorted** array. Checks the middle element — if it matches the tar
 ## D. Screenshots
 > Add screenshots to docs/screenshots/
 
+---
+
 ## E. Analysis
 
 1. Which sorting algorithm performed faster? Why?**
