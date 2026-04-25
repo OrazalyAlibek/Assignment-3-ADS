@@ -67,29 +67,32 @@ Works on a **sorted** array. Checks the middle element — if it matches the tar
 
 ---
 
-## D. Analysis
+## D. Screenshots
+> Add screenshots to docs/screenshots/
 
-**Which sorting algorithm performed faster? Why?**
+## E. Analysis
+
+1. Which sorting algorithm performed faster? Why?**
 Merge Sort was significantly faster on large arrays. On 1,000 elements, Bubble Sort took ~4,6 million ns while Merge Sort took ~114,000 ns - about 40× faster. This matches theory: Bubble Sort does ~1,000,000 comparisons (n²), Merge Sort does ~10,000 (n log n).
 
-**How does performance change with input size?**
+2. How does performance change with input size?**
 Bubble Sort grows quadratically - 10× more elements means ~100× more time. Merge Sort grows much slower - 10× more elements means only ~10× more time. Binary Search barely changes at all across sizes.
 
-**How does sorted vs unsorted data affect performance?**
+3. How does sorted vs unsorted data affect performance?**
 Bubble Sort on 1,000 sorted elements took ~870,000 ns vs ~4,6 million ns on random data - a 5,2× difference. This is because in a sorted array there are far fewer swaps needed. Merge Sort shows less difference since it always divides and merges regardless of input order.
 
-**Do the results match expected Big-O complexity?**
+4. Do the results match expected Big-O complexity?**
 Yes. Bubble Sort's ~400× slowdown from size 100 to 1,000 is close to the expected 100× for O(n²) (with some JVM overhead). Merge Sort's ~12× slowdown matches O(n log n). Binary Search's nearly flat times match O(log n).
 
-**Which searching algorithm is more efficient? Why?**
+5. Which searching algorithm is more efficient? Why?**
 Binary Search is very efficient even for 1,000 elements it takes at most 10 comparisons (log₂ 1000 ≈ 10). Linear Search would require up to 1,000 comparisons in the worst case.
 
-**Why does Binary Search require a sorted array?**
+6. Why does Binary Search require a sorted array?**
 At each step, Binary Search discards half the array based on whether the target is greater or less than the middle element. This logic only works if the array is ordered - in an unsorted array, discarding half the elements could mean throwing away the target.
 
 ---
 
-## E. Reflection
+## F. Reflection
 
 Working on this project made the difference between O(n²) and O(n log n) very real. Seeing Bubble Sort take 4,6 million nanoseconds on 1,000 elements while Merge Sort finished in under 115,000 was much more convincing than looking at formulas. It also showed that input type matters - Bubble Sort on a sorted array was 5× faster than on a random one, which is a detail that Big-O notation alone doesn't tell you.
 
